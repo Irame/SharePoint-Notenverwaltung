@@ -39,6 +39,9 @@ function initializePage()
                     
                     fach += '<table class="table">';
                     fach += '<th>Datum</th><th>Note</th><th>Typ</th>';
+                    for (var j = 0; j < val['faecher'][i]['noten'].length; j++) {
+                        fach += '<tr><td>' + val['faecher'][i]['noten'][j].datum + '</td><td>' + val['faecher'][i]['noten'][j].note + '</td><td>' + val['faecher'][i]['noten'][j].typ + '</td><td></tr>';
+                    }
                     fach += '</table>';
                     fach += getCollapsePanelLastPartWithoutPanelBody();
                     faecher.push(fach);
