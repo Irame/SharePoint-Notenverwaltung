@@ -1,16 +1,16 @@
 ﻿{
-  "schueler": "Klara Klinger",
+  "name": "Klara Klinger",
   "jahrgaenge": [
     {
       "jahrgang": "2016/2017",
       "klasse": "10B",
       "halbjahreszeugnis": "",
       "jahreszeugnis": "",
-      "notendurchschnitt": "<calculated>",
+      "notendurchschnitt": "3.1",
       "faecher": [
         {
           "name": "Deutsch",
-          "notendurchschnitt": "<calculated>",
+          "notendurchschnitt": "3.1",
           "noten": [
             {
               "datum": "13.06.2017",
@@ -26,7 +26,7 @@
         },
         {
           "name": "Mathematik",
-          "notendurchschnitt": "<calculated>",
+          "notendurchschnitt": "2.0",
           "noten": [
             {
               "datum": "13.04.2017",

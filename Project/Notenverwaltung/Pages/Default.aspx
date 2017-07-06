@@ -34,37 +34,7 @@
             <!-- Der folgende Inhalt wird durch den Benutzernamen ersetzt, wenn Sie die App ausführen (siehe "App.js"). -->
             initializing...
         </p>
-        <div class="firstrow row">
-            <div id="empty-div"></div>
-            <div class="col-sharepoint-offset col-sm-10 col-sm-offset-1">
-                <div class="panel-group">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" href="#collapse1">2016/2017 - 10B</a>
-                      </h4>
-                    </div>
-                    <div id="collapse1" class="panel-collapse collapse">
-                      <div class="panel-body">Panel Body</div>
-                      <div class="panel-footer">Panel Footer</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="panel-group">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" href="#collapse2">2015/2016 - 9B</a>
-                      </h4>
-                    </div>
-                    <div id="collapse2" class="panel-collapse collapse">
-                      <div class="panel-body">Panel Body</div>
-                      <div class="panel-footer">Panel Footer</div>
-                    </div>
-                  </div>
-                </div>
-            </div>
+        <div id="noten-content" class="firstrow row">
         </div>
     </div>
 
