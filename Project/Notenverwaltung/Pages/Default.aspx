@@ -9,10 +9,12 @@
 <%-- Markup und Skript im folgenden Content-Element werden im <head> der Seite platziert. --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">
     <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
     <SharePoint:ScriptLink name="sp.js" runat="server" OnDemand="true" LoadAfterUI="true" Localizable="false" />
     <meta name="WebPartPageExpansion" content="full" />
 
     <!-- Fügen Sie Ihre CSS-Formatvorlagen der folgenden Datei hinzu. -->
+    <link rel="Stylesheet" type="text/css" href="../Content/css/bootstrap.min.css" />
     <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
 
     <!-- Fügen Sie Ihr JavaScript der folgenden Datei hinzu. -->
@@ -21,7 +23,7 @@
 
 <%-- Das Markup im folgenden Content-Element wird im "TitleArea" der Seite platziert. --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">
-    Notenverwaltung
+    Notenverwaltung <span id="full-name"></span>
 </asp:Content>
 
 <%-- Markup und Skript im folgenden Content-Element werden im <body> der Seite platziert. --%>
@@ -32,6 +34,38 @@
             <!-- Der folgende Inhalt wird durch den Benutzernamen ersetzt, wenn Sie die App ausführen (siehe "App.js"). -->
             initializing...
         </p>
+        <div class="firstrow row">
+            <div id="empty-div"></div>
+            <div class="col-sharepoint-offset col-sm-10 col-sm-offset-1">
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse1">2016/2017 - 10B</a>
+                      </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                      <div class="panel-body">Panel Body</div>
+                      <div class="panel-footer">Panel Footer</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse2">2015/2016 - 9B</a>
+                      </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                      <div class="panel-body">Panel Body</div>
+                      <div class="panel-footer">Panel Footer</div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </asp:Content>

@@ -10,7 +10,26 @@ function initializePage()
     // Dieser Code wird ausgeführt, wenn das DOM bereit ist. Es wird ein Kontextobjekt erstellt, das zur Verwendung des SharePoint-Objektmodells erforderlich ist.
     $(document).ready(function () {
         getUserName();
+
+        getBackendData();
     });
+
+    function getBackendData() {
+        $.getJSON("../Scripts/schueler.js", function (data) {
+            var items = [];
+            $.each(data, function (key, val) {
+                items.push("<li id='" + key + "'>" + val + "</li>");
+            });
+
+            $("<ul/>", {
+                "class": "my-new-list",
+                html: items.join("")
+            }).appendTo("#empty-div");
+
+
+
+        });
+    }
 
     // Mit dieser Funktion wird eine SharePoint-Abfrage vorbereitet, geladen und dann ausgeführt, um die aktuellen Benutzerinformationen abzurufen.
     function getUserName() {
