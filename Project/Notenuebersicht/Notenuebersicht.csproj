@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7A6BD432-B107-4BA7-BB08-F03EE0511653}</ProjectGuid>
+    <ProjectGuid>{E3625115-3C52-4474-80ED-6888615D4BC9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Notenverwaltung</RootNamespace>
-    <AssemblyName>Notenverwaltung</AssemblyName>
+    <RootNamespace>Notenuebersicht</RootNamespace>
+    <AssemblyName>Notenuebersicht</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetOfficeVersion>16.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
@@ -16,11 +16,11 @@
     <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
     <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
     <ProjectMode>SharePointApp</ProjectMode>
-    <AppFeaturePartId>{27985ca3-ae88-4861-943c-3cabf164a903}</AppFeaturePartId>
-    <WspPartId>{1486459c-0cf4-4888-88a1-5790bb5e303b}</WspPartId>
-    <WorkflowPartId>{34ecfdbd-f724-4f12-942f-9891709df66b}</WorkflowPartId>
-    <CspkgPartId>{167066d7-f273-4e4c-8ba0-86eb106ddb58}</CspkgPartId>
-    <SqlPackagePartId>{89e7ddbd-5824-4bb5-a82d-8fa3081af572}</SqlPackagePartId>
+    <AppFeaturePartId>{0f05dfe5-fb7e-4613-9f06-54a54a50a422}</AppFeaturePartId>
+    <WspPartId>{3de4f859-e405-41a0-9831-a859b8dd04a2}</WspPartId>
+    <WorkflowPartId>{0fe10b45-5190-4693-9ba9-77f5454edca6}</WorkflowPartId>
+    <CspkgPartId>{6081bc7e-07d6-4e56-86b7-6a2469b213d0}</CspkgPartId>
+    <SqlPackagePartId>{a465b4fc-2f2e-40fe-8d9a-67a7af4a9fac}</SqlPackagePartId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,11 +44,11 @@
   <ItemGroup>
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Elements.xml" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\schueler.js" />
     <None Include="Content\css\bootstrap.min.css.map" />
     <None Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <None Include="Content\fonts\glyphicons-halflings-regular.ttf" />
@@ -56,26 +56,22 @@
     <None Include="Content\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{03703fef-4e17-4604-9336-dcde8d2092ce}</SharePointProjectItemId>
+      <SharePointProjectItemId>{6b8f71c6-6472-4051-a4e3-928b102dd5fd}</SharePointProjectItemId>
     </None>
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
-    <Content Include="Scripts\schueler.js" />
-    <None Include="SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{ec562990-9288-41e6-a352-be8263aeefe6}</SharePointProjectItemId>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Scripts\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{89e7ddbd-5824-4bb5-a82d-8fa3081af572}</SharePointProjectItemId>
+      <SharePointProjectItemId>{a465b4fc-2f2e-40fe-8d9a-67a7af4a9fac}</SharePointProjectItemId>
     </None>
     <Content Include="Scripts\Elements.xml" />
     <Content Include="Scripts\App.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{9efdb426-9345-4361-a472-61a8f543aced}</SharePointProjectItemId>
+      <SharePointProjectItemId>{0615a6ab-ec08-4934-a400-e0418cc42b4d}</SharePointProjectItemId>
     </None>
     <Content Include="Content\Elements.xml" />
     <Content Include="Content\App.css" />
@@ -86,18 +82,18 @@
     </Content>
     <Content Include="Images\Elements.xml" />
     <None Include="Images\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{0d02ed9d-2555-49bc-a471-093d45e51884}</SharePointProjectItemId>
+      <SharePointProjectItemId>{d9d1fc64-7c20-4d08-b6cc-a4ea23042ccf}</SharePointProjectItemId>
     </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Package\Package.package">
-      <PackageId>{144ba6c0-e42f-4f2a-878c-54738950b39e}</PackageId>
+      <PackageId>{a4262169-bfd6-4b8f-9a7a-4ed4bb556bd8}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
     <None Include="Features\Feature1\Feature1.feature">
-      <FeatureId>{3a8c567a-dfda-48ab-bb5e-b55b072c437a}</FeatureId>
+      <FeatureId>{b9d2ee26-3639-4461-a438-cd0fc5cf0fbc}</FeatureId>
     </None>
     <None Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
@@ -107,9 +103,6 @@
     <AppManifestFile Include="AppManifest.xml">
       <SubType>Designer</SubType>
     </AppManifestFile>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="System.Web" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="a4262169-bfd6-4b8f-9a7a-4ed4bb556bd8" 
+        solutionId="a4262169-bfd6-4b8f-9a7a-4ed4bb556bd8" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Notenuebersicht"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="b9d2ee26-3639-4461-a438-cd0fc5cf0fbc" />
+  </features>
+</package>
