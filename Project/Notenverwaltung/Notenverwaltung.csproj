@@ -60,7 +60,6 @@
     </None>
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
-    <Content Include="Scripts\schueler.js" />
     <None Include="SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ec562990-9288-41e6-a352-be8263aeefe6}</SharePointProjectItemId>
     </None>

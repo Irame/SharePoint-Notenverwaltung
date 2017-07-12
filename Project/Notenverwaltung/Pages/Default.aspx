@@ -23,7 +23,7 @@
 
 <%-- Das Markup im folgenden Content-Element wird im "TitleArea" der Seite platziert. --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">
-    Notenverwaltung <span id="full-name"></span>
+    Notenverwaltung
 </asp:Content>
 
 <%-- Markup und Skript im folgenden Content-Element werden im <body> der Seite platziert. --%>
@@ -34,7 +34,8 @@
             <!-- Der folgende Inhalt wird durch den Benutzernamen ersetzt, wenn Sie die App ausführen (siehe "App.js"). -->
             initializing...
         </p>
-        <div id="noten-content" class="firstrow row">
+        <div class="firstrow row col-sharepoint-offset col-sm-10 col-sm-offset-1">
+            Test
         </div>
     </div>
 
