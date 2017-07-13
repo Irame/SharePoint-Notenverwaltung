@@ -8,11 +8,22 @@ function initializePage()
     var user = context.get_web().get_currentUser();
 
     // Dieser Code wird ausgeführt, wenn das DOM bereit ist. Es wird ein Kontextobjekt erstellt, das zur Verwendung des SharePoint-Objektmodells erforderlich ist.
-    $(document).ready(function () {
-        getUserName();
-        
+    $(document).ready(function () {        
         $(".js-example-basic-single").select2();
+
+        $('.js-example-basic-single').on('select2:select', function () {
+            $('#myModal').modal('show');
+        });
+        $('#note-anlegen').click(function () {
+            var today = new Date();
+            $('table > tbody').first().append('<tr><td>' + $('#input-typ').val() + '</td><td>' + $('#input-note').val() + '</td><td>' + today.toLocaleDateString() + '</td></tr>');
+            $('#myModal').modal('hide');
+            $('#input-typ').val('');
+            $('#input-note').val('');
+        });
+
         getBackendData();
+
     });
 
     function getBackendData() {

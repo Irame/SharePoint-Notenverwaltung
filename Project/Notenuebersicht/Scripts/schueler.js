@@ -6,11 +6,11 @@
       "klasse": "10B",
       "halbjahreszeugnis": "",
       "jahreszeugnis": "",
-      "notendurchschnitt": "3.1",
+      "notendurchschnitt": "2.5",
       "faecher": [
         {
           "name": "Deutsch",
-          "notendurchschnitt": "3.1",
+          "notendurchschnitt": "2.7",
           "noten": [
             {
               "datum": "13.06.2017",
@@ -26,12 +26,12 @@
         },
         {
           "name": "Mathematik",
-          "notendurchschnitt": "2.0",
+          "notendurchschnitt": "2.3",
           "noten": [
             {
               "datum": "13.04.2017",
               "typ": "Schulaufgabe",
-              "note": 3
+              "note": 1
             },
             {
               "datum": "10.06.2017",

@@ -1,11 +1,13 @@
 ﻿/* Benutzerdefinierte Stile unten platzieren */
 .col-sharepoint-offset {
-    margin-left: 200px;
+    margin-left: 190px;
 }
 .firstrow {
     margin-top: 35px;
 }
-
+.margin-top-50 {
+    margin-top: 50px;
+}
 .panel-head-button {
     margin-top: -6px;
 }

@@ -32,10 +32,6 @@
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
 
     <div>
-        <p id="message">
-            <!-- Der folgende Inhalt wird durch den Benutzernamen ersetzt, wenn Sie die App ausführen (siehe "App.js"). -->
-            initializing...
-        </p>
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -48,13 +44,17 @@
                             <div class="form-group">
                                 <label for="input-schueler" class="label-margin-top-5 col-sm-2 control-label">Schüler</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="input-schueler" placeholder="Max Mustermann">
+                                    <input type="text" class="form-control" id="input-schueler" placeholder="Max Mustermann" value="Klara Klinger" disabled>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="input-fach" class="label-margin-top-5 col-sm-2 control-label">Schulfach</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="input-fach" placeholder="Schulfach">
+                                    <select class="form-control" id="input-fach">
+                                        <option value="Mathe">Mathematik</option>
+                                        <option value="Deutsch">Deutsch</option>
+                                        <option value="Geschichte">Geschichte</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -77,21 +77,30 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
-                        <button type="button" class="btn btn-primary">Bestätigen</button>
+                        <button type="button" class="btn btn-primary" id="note-anlegen">Bestätigen</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="firstrow row col-sharepoint-offset col-sm-10 col-sm-offset-1">
-            <select class="js-example-basic-single" style="width: 30%">
+        <div class="margin-top-50 row col-sharepoint-offset col-sm-10 col-sm-offset-1">
+            <div class="form-group">
+                <label for="suche" class="label-margin-top-5 col-sm-1 control-label">Suche</label>
+                <select class="js-example-basic-single form-control" id="suche" style="width: 195px">
                 <optgroup label="Klasse 10B">
-                    <option value="AL">Markus Müller</option>
-                    <option value="WY">Nina Nixdorf</option>
+                    <option value="AL">Beatrice Bauer</option>
+                    <option value="AL">Denis Diller</option>
+                    <option value="WY">Frederic Fenchl</option>
+                    <option value="WY">Klara Klinger</option>
                 </optgroup>
-                <optgroup label="Klasse 10C">
+                <optgroup label="Klasse 11A">
+                    <option value="AB">Eva Eller</option>
+                    <option value="AB">Iana Iller</option>
                     <option value="AB">Olaf Oger</option>
                 </optgroup>
             </select>
+            </div>
+
+            
 
             <div id="noten-content">
             </div>

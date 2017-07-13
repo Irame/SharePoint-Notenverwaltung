@@ -11,32 +11,32 @@
                         "schueler": [
                             {
                                 "id": 1,
-                                "name": "Hanna Herrmann",
+                                "name": "Klara Klinger",
                                 "noten": [
                                     {
                                         "note": 2,
-                                        "datum": "0001-01-01T00:00:00",
+                                        "datum": "2017-03-13T00:00:00",
                                         "typ": "Ex"
                                     },
                                     {
                                         "note": 3,
-                                        "datum": "0001-01-01T00:00:00",
+                                        "datum": "2017-05-21T00:00:00",
                                         "typ": "Schulaufgabe"
                                     }
                                 ]
                             },
                             {
                                 "id": 2,
-                                "name": "Klaus Kleber",
+                                "name": "Denis Diller",
                                 "noten": [
                                     {
                                         "note": 2,
-                                        "datum": "0001-01-01T00:00:00",
+                                        "datum": "2017-02-03T00:00:00",
                                         "typ": "Ex"
                                     },
                                     {
                                         "note": 3,
-                                        "datum": "0001-01-01T00:00:00",
+                                        "datum": "2017-04-14T00:00:00",
                                         "typ": "Schulaufgabe"
                                     }
                                 ]
@@ -49,7 +49,7 @@
                         "schueler": [
                             {
                                 "id": 1,
-                                "name": "Hanna Herrmann",
+                                "name": "Klara Klinger",
                                 "noten": [
                                     {
                                         "note": 3,
@@ -73,7 +73,7 @@
                 ]
             },
             {
-                "klasse": "10C",
+                "klasse": "11A",
                 "faecher": [
                     {
                         "id": 1,
@@ -85,12 +85,12 @@
                                 "noten": [
                                     {
                                         "note": 2,
-                                        "datum": "0001-01-01T00:00:00",
+                                        "datum": "2017-05-13T00:00:00",
                                         "typ": "Ex"
                                     },
                                     {
                                         "note": 3,
-                                        "datum": "0001-01-01T00:00:00",
+                                        "datum": "2017-03-21T00:00:00",
                                         "typ": "Schulaufgabe"
                                     }
                                 ]
@@ -143,7 +143,7 @@
                 ]
             }
         ],
-        "18/19": [
+        "16/17": [
             {
                 "klasse": "10B",
                 "faecher": [
