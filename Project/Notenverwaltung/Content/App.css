@@ -5,3 +5,16 @@
 .firstrow {
     margin-top: 35px;
 }
+
+.panel-head-button {
+    margin-top: -6px;
+}
+.modal-dialog {
+    margin-top: 10%;
+}
+.form-group {
+    height: 35px;
+}
+.label-margin-top-5 {
+    margin-top: 5px;
+}

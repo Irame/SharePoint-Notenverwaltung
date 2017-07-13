@@ -75,7 +75,7 @@ function initializePage() {
     function getCollapsePanelLastPartWithoutPanelBody() {
         return `        </div>
                       </div>
-                    </div>`;
+                    </div></div>`;
     }
     function getCollapsePanelLastPart() {
         return getCollapsePanelLastPartWithoutPanelBody() + '</div>';

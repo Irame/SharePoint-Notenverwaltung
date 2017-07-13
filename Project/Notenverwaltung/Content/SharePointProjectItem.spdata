@@ -10,5 +10,6 @@
     <ProjectItemFile Source="fonts\glyphicons-halflings-regular.ttf" Target="Content\fonts\" Type="ElementFile" />
     <ProjectItemFile Source="fonts\glyphicons-halflings-regular.woff" Target="Content\fonts\" Type="ElementFile" />
     <ProjectItemFile Source="fonts\glyphicons-halflings-regular.woff2" Target="Content\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="css\select2.min.css" Target="Content\css\" Type="ElementFile" />
   </Files>
 </ProjectItem>
