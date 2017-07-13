@@ -30,10 +30,6 @@
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
 
     <div>
-        <p id="message">
-            <!-- Der folgende Inhalt wird durch den Benutzernamen ersetzt, wenn Sie die App ausführen (siehe "App.js"). -->
-            initializing...
-        </p>
         <div id="noten-content" class="firstrow row">
         </div>
     </div>

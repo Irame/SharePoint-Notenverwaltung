@@ -9,11 +9,13 @@ function initializePage() {
     // Dieser Code wird ausgeführt, wenn das DOM bereit ist. Es wird ein Kontextobjekt erstellt, das zur Verwendung des SharePoint-Objektmodells erforderlich ist.
     $(document).ready(function () {
         getUserName();
-
-        getBackendData();
+        
     });
 
     function getBackendData() {
+        var loginName = user.get_loginName();
+        var uri = 'http://flowsys.maxarndt.com:5000/api/SchuelerSicht/' + loginName.substr(loginName.indexOf('\\') + 1, loginName.length - loginName.indexOf('\\') - 1);
+
         $.getJSON("../Scripts/schueler.js", function (data) {
 
             //var jsonObj = JSON.parse(data);
@@ -27,8 +29,8 @@ function initializePage() {
                 var panelBody = '<dl class="dl-horizontal"><dt>Jahrgang</dt><dd>' + val['jahrgang']; + '</dd>';
                 panelBody += '<dt>Klasse</dt><dd>' + val['klasse'] + '</dd>';
                 panelBody += '<dt>Notendurchschnitt</dt><dd>' + val['notendurchschnitt'] + '</dd>';
-                panelBody += '<dt>Jahreszeugnis</dt><dd></dd>';
-                panelBody += '<dt>Halbjahreszeugnis</dt><dd></dd>';
+                panelBody += '<dt>Jahreszeugnis</dt><dd><a href="#">PDF</a></dd>';
+                panelBody += '<dt>Halbjahreszeugnis</dt><dd><a href="#">PDF</a></dd>';
                 panelBody += '</dl>';
 
                 var faecher = [];
@@ -100,7 +102,7 @@ function initializePage() {
     // Diese Funktion wird ausgeführt, wenn der obige Aufruf erfolgreich ist.
     // Hierbei werden die Inhalte des message-Elements durch den Benutzernamen ersetzt.
     function onGetUserNameSuccess() {
-        $('#message').text('Hello ' + user.get_title());
+        getBackendData();
     }
 
     // Diese Funktion wird bei einem Fehler des obigen Aufrufs ausgeführt.
